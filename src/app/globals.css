@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #eae1d0;
+  --foreground: #162308;
 }
 
 @theme inline {
@@ -10,12 +10,21 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-bergen: var(--font-bergen);
+  --font-tiempos: var(--font-tiempos-regular);
+  --font-tiempos-italic: var(--font-tiempos-italic);
+  --font-tiempos-semibold: var(--font-tiempos-semi-bold);
+  --font-copernicus-book: var(--font-copernicus-book);
+  --font-copernicus-italic: var(--font-copernicus-italic);
+  --font-copernicus-bold: var(--font-copernicus-bold);
+  --font-posterman: var(--font-posterman);
+  --font-albra: var(--font-albra);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #eae1d0;
+    --foreground: #162308;
   }
 }
 
@@ -23,4 +32,14 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
