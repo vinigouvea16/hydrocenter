@@ -62,12 +62,12 @@ export default function Vantagens() {
                 id="card-header"
               >
                 <card.icon size={20} />
-                <div className="tracking-wide font-tiempos-semibold opacity-80 brightness-110">
+                <div className="tracking-wide font-tiempos-italic opacity-80 brightness-110">
                   {card.title}
                 </div>
               </div>
               <div className="flex flex-col space-y-3">
-                <span className="font-tiempos-semibold text-3xl">
+                <span className="font-tiempos-italic text-3xl">
                   {card.subtitle}
                 </span>
                 <p className="tracking-wide">{card.description}</p>

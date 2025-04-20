@@ -33,11 +33,6 @@ const tiemposItalic = localFont({
   variable: '--font-tiempos-italic',
 })
 
-const tiemposSemiBold = localFont({
-  src: './fonts/Tiempos-SemiBold.otf',
-  variable: '--font-tiempos-semi-bold',
-})
-
 const copernicusBook = localFont({
   src: './fonts/Copernicus-Book.ttf',
   variable: '--font-copernicus-book',
@@ -71,7 +66,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${albra.variable} ${posterman.variable} ${bergen.variable} ${tiemposRegular.variable} ${tiemposItalic.variable} ${tiemposSemiBold.variable} ${copernicusBook.variable} ${copernicusItalic.variable} ${copernicusBold.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${albra.variable} ${posterman.variable} ${bergen.variable} ${tiemposRegular.variable} ${tiemposItalic.variable} ${copernicusBook.variable} ${copernicusItalic.variable} ${copernicusBold.variable} antialiased`}
       >
         {children}
       </body>
