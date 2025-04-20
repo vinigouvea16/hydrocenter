@@ -52,7 +52,7 @@ export default function Hero() {
       >
         <div className="grid lg:grid-cols-3 grid-cols-1 items-center gap-2 w-full pt-10 lg:pt-0">
           <motion.div
-            className="md:w-4/5 mx-auto lg:pb-20 pl-10"
+            className="md:w-4/5 mx-auto lg:pb-20 lg:pl-10"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 4 }}
