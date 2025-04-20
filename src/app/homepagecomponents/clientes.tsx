@@ -4,7 +4,7 @@ import React from 'react'
 export default function Clientes() {
   return (
     <div className="lg:h-[40vh] flex flex-col justify-around items-center ">
-      <h1 className="font-copernicus-bold lg:text-3xl text-2xl opacity-75">
+      <h1 className="font-copernicus-bold lg:text-3xl text-2xl opacity-75 text-center">
         Empresas que confiam em nós
       </h1>
       <div className="flex lg:flex-row flex-col justify-evenly w-full items-center space-y-12 my-10 lg:my-0">

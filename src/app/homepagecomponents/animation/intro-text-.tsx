@@ -22,7 +22,7 @@ const IntroText = ({ isVisible }: { isVisible: boolean }) => {
           />
 
           <motion.div
-            className="absolute top-20 left-20 space-y-4 max-w-[400px]"
+            className="absolute lg:top-20 lg:left-20 left-5 top-10 space-y-4 max-w-[400px]"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
