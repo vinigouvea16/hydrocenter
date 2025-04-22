@@ -56,6 +56,35 @@ const posterman = localFont({
 export const metadata: Metadata = {
   title: 'Hydrocenter',
   description: 'Planeta Água, Nutrição Sustentável',
+  keywords: [
+    'Hydrocenter',
+    'Chácara Hydrocenter',
+    'Hidrocenter',
+    'sustentabilidade',
+    'Nutrição sustentável',
+    'Hortaliças',
+  ],
+  openGraph: {
+    title: 'Hydrocenter | Hortaliças Hidropônicas',
+    description: 'Hydrocenter, Nutrição Sustentável',
+    url: 'https://hydrocenter.vercel.app/',
+    siteName: 'Hydrocenter',
+    images: [
+      {
+        url: 'https://hydrocenter.vercel.app/metadatahydrocenter.png',
+        width: 1200,
+        height: 630,
+        alt: 'Hydrocenter | Hortaliças Hidropônicas',
+      },
+    ],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Hydrocenter | Hortaliças Hidropônicas',
+    description: 'Hydrocenter, Nutrição Sustentável',
+    images: ['https://hydrocenter.vercel.app/metadatahydrocenter.png'],
+  },
 }
 
 export default function RootLayout({

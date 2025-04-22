@@ -7,22 +7,22 @@ export default function Footer() {
     <div className="flex flex-col lg:flex-row bg-[#162308] justify-around h-[60vh] lg:py-0 py-10">
       <div
         id="brand"
-        className="flex flex-col space-y-4 items-center justify-center"
+        className="flex flex-col space-y-2 items-center justify-center"
       >
         <div className="">
-          <h1 className="font-copernicus-book lg:text-5xl xl:text-7xl text-5xl uppercase text-[#EBFE94]">
+          <h1 className="font-copernicus-book lg:text-5xl xl:text-7xl text-4xl uppercase text-[#EBFE94]">
             hydrocenter
           </h1>
-          <div className="h-[1px] w-11/12 mx-auto bg-gradient-to-r from-[#77B1C2]-hover/5 via-[#77B1C2] to-brain-[#77B1C2]/5 " />
+          <div className="h-[1px] w-11/12 mx-auto bg-gradient-to-r from-[#77B1C2]/5 via-[#77B1C2] to-brain-[#77B1C2]/5 " />
         </div>
-        <h2 className="text-[#77B1C2] xl:text-2xl text-xl">
+        <h2 className="text-[#77B1C2] xl:text-2xl text-lg">
           Planeta Água, Nutrição Sustentável
         </h2>
         <a href="https://www.instagram.com/hydrocenter_/">
-          <Instagram className="lg:text-3xl text-2xl mt-2" />
+          <Instagram className="lg:text-3xl text-2xl mt-4" />
         </a>
       </div>
-      <div className="flex flex-col lg:flex-row text-center lg:text-left lg:gap-20 gap-12 justify-center align-bottom items-center">
+      <div className="flex flex-col lg:flex-row text-center lg:text-left lg:w-[40%] w-full gap-10 lg:gap-0 justify-between align-bottom items-center">
         <div id="contact" className="">
           <div className="flex flex-col items-center lg:items-start space-y-1">
             <span className="font-albra tracking-wide text-white text-2xl">
@@ -52,7 +52,7 @@ export default function Footer() {
           </p>
           <p className="font-tiempos tracking-wide">Sábados: 7h - 11h</p>
         </div>
-        <div className="rounded-full border-white/40 p-4 border hover:bg-[#EBFE94]/20">
+        <div className="rounded-full border-white/40 p-4 border hover:bg-[#EBFE94]/60 hover:cursor-pointer">
           <a href="#hero">
             <ChevronsUp color="#EAE1D0" />
           </a>

@@ -6,12 +6,12 @@ export default function Hidroponia() {
   return (
     <div className="flex flex-col border-b border-white/70">
       <div className="max-w-[1440px] mx-auto space-y-4 py-14 px-4 xl:px-0">
-        <h1 className="font-bold text-2xl">O que é a hidroponia?</h1>
+        <h1 className="font-bold lg:text-2xl text-xl">O que é a hidroponia?</h1>
         <div className="flex flex-col lg:flex-row justify-between gap-4 lg:gap-0">
-          <h2 className="lg:w-2/3 font-tiempos-italic lg:text-[40px] text-3xl ">
+          <h2 className="lg:w-2/3 font-tiempos-italic lg:text-[40px] text-2xl ">
             Cultivo de plantas sem solo, utilizando soluções nutritivas em água.
           </h2>
-          <p className="lg:w-1/4 font-tiempos opacity-70 text-lg tracking-widest">
+          <p className="lg:w-1/4 font-tiempos opacity-70 lg:text-lg tracking-widest">
             Alimentos cultivados com cuidado e precisão, garantido sabor e
             qualidade superiores.
           </p>
@@ -28,7 +28,7 @@ export default function Hidroponia() {
           unoptimized
         />
 
-        <div className="flex flex-col items-center justify-center text-center lg:pr-16 lg:pl-6 gap-12 p-4 ">
+        <div className="flex flex-col items-center justify-center text-center lg:pr-16 lg:pl-6 gap-8 p-4 ">
           <p className="font-tiempos opacity-70 xl:text-xl tracking-wider ">
             Embora o termo <span className="italic">hidroponia</span> seja
             relativamente novo, as técnicas de cultivo sem solo têm raízes
@@ -37,7 +37,7 @@ export default function Hidroponia() {
             hidroponia. Além disso, há evidências de que os antigos egípcios
             praticavam o cultivo de plantas em água ao longo do Rio Nilo.
           </p>
-          <p className="font-tiempos-italic xl:text-4xl text-2xl">
+          <p className="font-tiempos-italic xl:text-4xl text-2xl pb-3">
             Prepare-se para colher os benefícios de uma agricultura moderna e
             consciente, que respeita o planeta e nutre você de verdade.
           </p>

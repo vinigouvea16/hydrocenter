@@ -39,11 +39,11 @@ export default function Sobre() {
           </p>
         </div>
       </div>
-      <div className="flex max-h-[491px]" id="images">
+      <div className="flex lg:max-h-[491px] lg:flex-row flex-col" id="images">
         <Image
           alt=""
           src="/about1.jpg"
-          className="object-cover w-1/2"
+          className="object-cover lg:w-1/2"
           unoptimized
           width={738}
           height={491}
@@ -52,7 +52,7 @@ export default function Sobre() {
         <Image
           alt=""
           src="/about2.jpg"
-          className="object-cover w-1/2"
+          className="object-cover lg:w-1/2"
           unoptimized
           width={738}
           height={491}

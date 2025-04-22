@@ -1,3 +1,4 @@
+import StickyCursor from './homepagecomponents/animation/sticky-cursort'
 import Banner from './homepagecomponents/banner'
 import Clientes from './homepagecomponents/clientes'
 import Footer from './homepagecomponents/footer'
@@ -9,7 +10,8 @@ import Vantagens from './homepagecomponents/vantagens'
 
 export default function Home() {
   return (
-    <div className="flex flex-col ">
+    <div className="flex flex-col cursor-auto">
+      <StickyCursor />
       <Hero />
       <Banner />
       <Hidroponia />

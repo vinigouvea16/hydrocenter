@@ -79,17 +79,17 @@ export default function Hero() {
               }}
             />
             <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 4.3 }}
             >
               <h1 className="font-copernicus-book lg:text-7xl xl:text-8xl text-5xl pt-8">
                 Hydrocenter
               </h1>
-              <div className="h-[1px] mx-auto bg-gradient-to-r from-[#77B1C2]/5 via-[#77B1C2] to-[#77B1C2]/5" />
+              <div className="h-[1px] mx-auto bg-gradient-to-r from-sky/5 via-sky-500/100 to-sky/5 origin-center" />
             </motion.div>
             <motion.h4
-              className="font-tiempos xl:text-2xl text-xl text-[#77B1C2]"
+              className="font-tiempos xl:text-2xl text-lg text-sky-600 tracking-wide"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 4.3 }}
