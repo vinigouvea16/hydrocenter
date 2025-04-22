@@ -25,7 +25,7 @@ export default function Hidroponia() {
           className="object-cover w-full h-full"
           width={710}
           height={324}
-          unoptimized
+          priority
         />
 
         <div className="flex flex-col items-center justify-center text-center lg:pr-16 lg:pl-6 gap-8 p-4 ">

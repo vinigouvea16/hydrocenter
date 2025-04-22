@@ -44,7 +44,8 @@ export default function Sobre() {
           alt=""
           src="/about1.jpg"
           className="object-cover lg:w-1/2"
-          unoptimized
+          loading="lazy"
+          quality={100}
           width={738}
           height={491}
         />
@@ -53,7 +54,8 @@ export default function Sobre() {
           alt=""
           src="/about2.jpg"
           className="object-cover lg:w-1/2"
-          unoptimized
+          loading="lazy"
+          quality={100}
           width={738}
           height={491}
         />

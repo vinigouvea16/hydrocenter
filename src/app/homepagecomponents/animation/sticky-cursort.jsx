@@ -30,7 +30,7 @@ export default function StickyCursor() {
 
   return (
     <motion.div
-      className="fixed w-[20px] h-[20px] bg-[#77B1C2] mix-blend-exclusion rounded-full pointer-events-none"
+      className="fixed w-[20px] h-[20px] bg-[#77B1C2] mix-blend-exclusion rounded-full pointer-events-none lg:block hidden"
       style={{ left: smoothMouse.x, top: smoothMouse.y }}
     />
   )

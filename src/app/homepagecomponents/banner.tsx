@@ -9,7 +9,8 @@ export default function Banner() {
         width={539}
         height={360}
         alt=""
-        unoptimized
+        priority
+        quality={100}
         className="w-full h-auto object-cover"
       />
       <Image
@@ -17,7 +18,8 @@ export default function Banner() {
         width={539}
         height={360}
         alt=""
-        unoptimized
+        priority
+        quality={100}
         className="w-full h-auto object-cover"
       />
       <Image
@@ -25,7 +27,8 @@ export default function Banner() {
         width={539}
         height={360}
         alt=""
-        unoptimized
+        priority
+        quality={100}
         className="w-full h-auto object-cover"
       />
       <Image
@@ -33,7 +36,8 @@ export default function Banner() {
         width={539}
         height={360}
         alt=""
-        unoptimized
+        priority
+        quality={100}
         className="w-full h-auto object-cover"
       />
     </div>
