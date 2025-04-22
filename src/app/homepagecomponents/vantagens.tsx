@@ -79,7 +79,7 @@ export default function Vantagens() {
               src={card.imageSrc}
               width={719}
               height={331}
-              unoptimized
+              // unoptimized
               className="object-cover w-full h-full"
               alt={card.imageAlt}
             />
