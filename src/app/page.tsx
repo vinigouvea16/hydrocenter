@@ -2,6 +2,7 @@ import StickyCursor from './homepagecomponents/animation/sticky-cursort'
 import Banner from './homepagecomponents/banner'
 import Clientes from './homepagecomponents/clientes'
 import Footer from './homepagecomponents/footer'
+import GalleryCTA from './homepagecomponents/galeria-cta'
 import Hero from './homepagecomponents/hero'
 import Hidroponia from './homepagecomponents/hidroponia'
 import Logos from './homepagecomponents/logos'
@@ -18,6 +19,7 @@ export default function Home() {
       <Vantagens />
       <Sobre />
       <Logos />
+      <GalleryCTA />
       <Clientes />
       <Footer />
     </div>

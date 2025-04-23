@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Logos() {
   return (
-    <div className="lg:h-[70vh] flex justify-center">
+    <div className="lg:h-[70vh] flex justify-center ">
       <div className="flex lg:flex-row flex-col justify-evenly w-full items-center space-y-12 my-10 lg:my-0">
         <Image
           alt=""

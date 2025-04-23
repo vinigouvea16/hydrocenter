@@ -44,7 +44,7 @@ export default function Hero() {
       <IntroText isVisible={animationStage === 'text'} />
 
       <motion.main
-        className="flex flex-col items-center lg:justify-center lg:h-[100vh] max-w-[1560px] h-lvh mx-auto mb-10 lg:mb-20"
+        className="flex flex-col items-center lg:justify-center lg:h-[100vh] max-w-[1560px] min-h-[860px] mx-auto mb-10 lg:mb-20"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 3.7 }}

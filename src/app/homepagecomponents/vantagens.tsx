@@ -1,3 +1,5 @@
+'use client'
+import { motion } from 'framer-motion'
 import { Droplets, Leaf, Scan, Zap } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
@@ -9,7 +11,7 @@ const cardsData = [
     title: 'Economia de Água',
     subtitle: 'Sustentabilidade',
     description:
-      'Sistemas hidropônicos usam até 70% menos água que métodos convencionais de cultivo, reciclando e reaproveitando a água, o que torna esta técnica extremamente sustentável e ideal para regiões com escassez hídrica.',
+      'Sistemas hidropônicos usam até 70% menos água que métodos convencionais de cultivo, reciclando e reaproveitando a água, o que torna esta técnica extremamente sustentável e ideal para regiões com escassez hídrica. Nossa plantação conta, também com 66 placas solares para abastecimento da rede elétrica.',
     imageSrc: '/sustentabilidade.png',
     imageAlt: 'Imagem de sustentabilidade',
   },
@@ -19,7 +21,7 @@ const cardsData = [
     title: 'Crescimento Acelerado',
     subtitle: 'Produtividade',
     description:
-      'As plantas cultivadas em sistemas hidropônicos crescem até 50% mais  rápido, uma vez que recebem diretamente os nutrientes necessários, sem  precisar buscar no solo. Isso resulta em ciclos de produção mais curtos e maior produtividade.',
+      'As plantas cultivadas em sistemas hidropônicos crescem até 50% mais rápido, uma vez que recebem diretamente os nutrientes necessários, sem precisar buscar no solo. Isso resulta em ciclos de produção mais curtos e maior produtividade.',
     imageSrc: '/produtividade.png',
     imageAlt: 'Imagem de nutrição otimizada',
   },
@@ -39,7 +41,7 @@ const cardsData = [
     title: 'Otimização de Espaço',
     subtitle: 'Produtividade',
     description:
-      'Cultivos hidropônicos permitem aproveitar espaços verticais e podem ser  instalados em áreas urbanas, telhados ou pequenos espaços, tornando possível produzir alimentos frescos mesmo em ambientes com limitação de  área.',
+      'Cultivos hidropônicos permitem aproveitar espaços verticais e podem ser instalados em áreas urbanas, telhados ou pequenos espaços, tornando possível produzir alimentos frescos mesmo em ambientes com limitação de área.',
     imageSrc: '/espaco.png',
     imageAlt: 'Imagem de nutrição otimizada',
   },
@@ -55,7 +57,14 @@ export default function Vantagens() {
             index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
           }`}
         >
-          <div id="text" className="md:w-1/2  my-auto flex flex-col ">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: false }}
+            id="text"
+            className="md:w-1/2 my-auto flex flex-col "
+          >
             <div className="lg:w-4/5 mx-auto p-4 lg:p-0 space-y-3">
               <div
                 className="flex lg:gap-2 gap-1 items-center"
@@ -73,7 +82,7 @@ export default function Vantagens() {
                 <p className="tracking-wide">{card.description}</p>
               </div>
             </div>
-          </div>
+          </motion.div>
           <div id="image" className="md:w-1/2">
             <Image
               src={card.imageSrc}

@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Clientes() {
   return (
-    <div className="lg:h-[40vh] flex flex-col justify-around items-center ">
+    <div className="lg:h-[40vh] flex flex-col justify-around items-center">
       <h1 className="font-copernicus-bold lg:text-3xl text-2xl opacity-75 text-center">
         Empresas que confiam em nós
       </h1>

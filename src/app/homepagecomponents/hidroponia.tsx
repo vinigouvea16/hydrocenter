@@ -1,11 +1,19 @@
+'use client'
 import { Droplets, Zap, Leaf, Scan } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
+import { motion } from 'framer-motion'
 
 export default function Hidroponia() {
   return (
     <div className="flex flex-col border-b border-white/70">
-      <div className="max-w-[1440px] mx-auto space-y-4 py-14 px-4 xl:px-0">
+      <motion.div
+        initial={{ opacity: 0, x: 60 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: false }}
+        className="max-w-[1440px] mx-auto space-y-4 py-14 px-4 xl:px-0"
+      >
         <h1 className="font-bold lg:text-2xl text-xl">O que é a hidroponia?</h1>
         <div className="flex flex-col lg:flex-row justify-between gap-4 lg:gap-0">
           <h2 className="lg:w-2/3 font-tiempos-italic lg:text-[40px] text-2xl ">
@@ -16,7 +24,7 @@ export default function Hidroponia() {
             qualidade superiores.
           </p>
         </div>
-      </div>
+      </motion.div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 border-t border-white/70">
         <Image
@@ -37,15 +45,27 @@ export default function Hidroponia() {
             hidroponia. Além disso, há evidências de que os antigos egípcios
             praticavam o cultivo de plantas em água ao longo do Rio Nilo.
           </p>
-          <p className="font-tiempos-italic xl:text-4xl text-2xl pb-3">
+          <motion.p
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: false }}
+            className="font-tiempos-italic xl:text-4xl text-2xl pb-3"
+          >
             Prepare-se para colher os benefícios de uma agricultura moderna e
             consciente, que respeita o planeta e nutre você de verdade.
-          </p>
+          </motion.p>
         </div>
       </div>
 
       {/* // CARDS */}
-      <div className="flex flex-col lg:h-[200px] lg:flex-row justify-evenly items-center border-t border-white/70">
+      <motion.div
+        initial={{ opacity: 0, x: 60 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: false }}
+        className="flex flex-col lg:h-[200px] lg:flex-row justify-evenly items-center border-t border-white/70"
+      >
         {/* // card 1 */}
         <div className="flex flex-col gap-2 p-4 xl:p-0 max-w-[573px]">
           <div className="flex gap-2 items-center" id="card-header">
@@ -100,7 +120,7 @@ export default function Hidroponia() {
             Cultivo independete de solo, capaz de ser produzido em áreas urbanas
           </p>
         </div>
-      </div>
+      </motion.div>
     </div>
   )
 }
