@@ -11,7 +11,7 @@ import Vantagens from './homepagecomponents/vantagens'
 
 export default function Home() {
   return (
-    <div className="flex flex-col cursor-auto">
+    <div className="flex flex-col cursor-auto overflow-x-hidden">
       <StickyCursor />
       <Hero />
       <Banner />

@@ -41,7 +41,7 @@ export default function Galeria() {
   }
 
   return (
-    <div className="min-h-screen p-4 text-foreground/80">
+    <div className="min-h-screen p-4 text-foreground/80 overflow-x-hidden">
       <StickyCursor />
       <div className="max-w-[1560px] border border-white/50 rounded-3xl min-h-screen mx-auto">
         <div className="flex flex-col p-4">
@@ -82,6 +82,7 @@ export default function Galeria() {
                 alt={img.alt}
                 width={600}
                 height={400}
+                priority
                 className="rounded-lg object-cover w-full h-48"
               />
             </button>

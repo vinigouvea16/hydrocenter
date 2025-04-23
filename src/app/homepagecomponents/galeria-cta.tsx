@@ -22,9 +22,9 @@ export default function GalleryCTA() {
   }, [])
 
   return (
-    <section className="relative py-20 px-4 lg:h-[60vh] bg-gradient-to-b from-[#F2FBE1]/5 via-[#F2FBE1]/90 to-[#F2FBE1]/5 overflow-hidden text-foreground flex items-center">
+    <section className="relative py-20 px-4 lg:h-[60vh] bg-gradient-to-b from-[#F2FBE1]/5 via-[#F2FBE1]/60 to-[#F2FBE1]/5 overflow-hidden text-foreground flex items-center">
       {/* Grid de imagens ao fundo */}
-      <div className="absolute inset-0 opacity-30 pointer-events-none">
+      <div className="absolute inset-0 opacity-20 pointer-events-none">
         <div className="grid grid-cols-3 md:grid-cols-6 gap-2 h-full w-full p-4">
           {galleryImages.map(img => (
             <div key={img.id} className="relative w-full h-full">
